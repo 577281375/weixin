@@ -1,0 +1,36 @@
+<!--pages/home/home.wxml-->
+<view>
+<text></text>
+<view>
+<text data-id="{{id}}">{{text}}</text>
+<checkbox checked="{{true}}"></checkbox>
+<view>{{a+b}}</view>
+
+<view wx:if="{{!!flag}}"  bindtap="change">
+  <text>wx:if不渲染-----{{flag}}</text>
+</view>
+<view hidden="{{false}}"  bindtap="change">
+  <text>wx:hidden不渲染-----{{flag}}</text>
+</view>
+
+<view wx:for="{{numArr}}" wx:for-item="i" wx:key="i">
+  <view wx:for="{{numArr}}" wx:for-item="j" wx:key="j">
+    <view wx:if="{{i<=j}}">
+      {{i}} * {{j}} = {{i*j}}
+    </view>
+  </view>
+</view>
+
+
+
+
+<view>
+<text bindtap="changeText" data-id="{{eventText}}">{{eventText}}</text>
+</view>
+</view>
+
+<!-- 
+<template is="actionsheet"/>
+<import  src="/tpls/actionsheet.wxml"/> -->
+
+</view>

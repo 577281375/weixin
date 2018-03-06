@@ -1,0 +1,10 @@
+nav {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-wrap: nowrap; }
+  nav view {
+    flex: 1;
+    text-align: center;
+    line-height: 90rpx;
+    color: #123456; }

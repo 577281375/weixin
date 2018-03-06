@@ -1,0 +1,45 @@
+<!--pages/find/find.wxml-->
+<!--pages/find/find.wxml-->
+<view class="wraper">
+<nav>
+  <view
+  wx:for="{{navList}}" 
+  wx:key="{{index}}"
+  class="{{navIndex == index?'active':''}}"
+  data-id="{{index}}"
+  bindtap="changeNavIndex"
+  >{{item}}</view>
+</nav>
+
+<view class="content">
+  <swiper
+  indicator-dots='{{false}}'
+  current="{{navIndex}}"
+  bindchange="changePogationIndex"
+  >
+    <swiper-item >
+
+
+    
+    <view>item001</view>
+  <view>item002</view>
+  <view>item003</view>
+  <view>item004</view>
+
+    </swiper-item >
+    <swiper-item ><view>item001</view>
+<view>item002</view>
+<view>item003</view>
+<view>item004</view>
+<view>item005</view>
+
+</swiper-item >
+    <swiper-item ><view>item001</view>
+<view>item002</view>
+
+</swiper-item >
+  </swiper>
+</view>
+
+</view>
+
